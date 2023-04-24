@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 200ms linear;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.py-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.container {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col-3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col-12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+article {
+    overflow: hidden;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* we should use here class and root for these kinds of task! */
+article h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 123.6%;
+    color: #000000;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* we should use here class and root for these kinds of task! */
+article p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150.6%;
+    color: #7B7B7B;
+    margin-bottom: 15px;
+}
+
+.iconBox {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconBoxContainer {
+    height: 100%;
+    position: absolute;
+    right: -40px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconBoxContainer>.iconBox:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+article:hover .iconBoxContainer {
+    right: 0;
+}
+
+.iconBox:hover {
+    background-color: #FF5300;
+}
+
+.iconBox:hover>svg path {
+    fill: white;
+}
+
+@media (min-width:576px) {
+    .col-sm-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:768px) {
+    .col-md-4 {
+        width: 33.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:992px) {
+    .col-lg-3 {
+        width: 25%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .mb-lg-0 {
+        margin-bottom: 0;
+    }
+}
