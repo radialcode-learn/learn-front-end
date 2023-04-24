@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    transition: all 200ms linear;
+}
+
+@media (min-width:768px) {
+    .position_md_absolute {
+        position: absolute;
+    }
+
+    .w_md_50 {
+        width: 50%;
+    }
+
+    .img_positioning {
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
