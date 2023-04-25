@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 200ms linear;
+}
+
+.bg-blue-300 {
+    background-color: #2F1893;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.pageLogo {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.max-w-607 {
+    max-width: 607px;
+}
+
+.max-w-480 {
+    max-width: 480px;
+}
+
+.max-w-607>p:first-child {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.max-w-607>p:last-child {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6D5DB3;
+    text-align: center;
+}
+
+input[type="text"] {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #8274BE;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 2px solid #8274BE;
+    padding: 16px 24px;
+}
+
+input[type="text"]::placeholder {
+    font-family: 'DM Sans', sans-serif;
+    color: #8274BE;
+}
+
+input[type="text"]+button {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #25DAC5;
+    border-radius: 30px;
+    padding: 16px 33px;
+    border: none;
+    margin-left: 10px;
+}
+
+nav ul li:last-child a {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 7px 18px;
+    background: #482BE7;
+    border-radius: 100px;
+}
