@@ -1,0 +1,12 @@
+
+html
+css
+
+
+js
+    datatypes
+    
+    1. primitive 
+    2. non-primitive
+    
+    
