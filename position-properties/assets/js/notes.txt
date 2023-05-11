@@ -9,4 +9,9 @@ js
     1. primitive 
     2. non-primitive
     
-    
+    font-size
+    font-weigth
+    font-family
+    color
+        back
+        text

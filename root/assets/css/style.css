@@ -1,0 +1,31 @@
+.d-flex {
+    display: flex;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-yellow-300 {
+    background-color: yellow;
+}
