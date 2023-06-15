@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style-type: none;
     scroll-behavior: smooth;
+    transition: all 200ms linear;
 }
 
 section {
