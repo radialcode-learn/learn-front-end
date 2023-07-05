@@ -21,8 +21,20 @@
     align-items: center;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
 .relative {
     position: relative;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .min-vh-100 {
@@ -33,9 +45,18 @@
     width: 100%;
 }
 
+.p-24 {
+    padding: 24px;
+}
+
 .py-24 {
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .mb-24 {
@@ -75,6 +96,25 @@ article {
     text-align: center;
     background: #FFFFFF;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.cardBox {
+    border-width: 0px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.bg-blue {
+    background: #2C49FEBD;
+}
+
+.cardBtn.btnFill {
+    padding: 20px 20px;
+    border: 2px solid transparent;
+    border-radius: 150px;
+    background-color: white;
+    color: #2C49FE;
 }
 
 /* we should use here class and root for these kinds of task! */
@@ -136,12 +176,57 @@ article:hover .iconBoxContainer {
     fill: white;
 }
 
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 @media (min-width:576px) {
     .col-sm-6 {
         width: 50%;
         padding-left: 12px;
         padding-right: 12px;
     }
+
+    .col-sm-10 {
+        width: 83.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .w-sm-50 {
+        width: 50%;
+    }
+
+    .card {
+        position: relative;
+    }
+
+    .card::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        top: 50%;
+        left: 0;
+        background-color: white;
+        transform: translateY(-50%);
+    }
+
+    .card::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 3px;
+        top: 0;
+        left: 50%;
+        background-color: white;
+        transform: translateX(-50%);
+    }
+
 }
 
 @media (min-width:768px) {
@@ -149,6 +234,29 @@ article:hover .iconBoxContainer {
         width: 33.33%;
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+    .w-md-33 {
+        width: 33.33%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .card::before {
+        content: unset;
+    }
+
+    .card::after {
+        content: unset;
+    }
+
+    .border-md-both {
+        border-left: 2px solid white;
+        border-right: 2px solid white;
     }
 }
 
@@ -159,7 +267,26 @@ article:hover .iconBoxContainer {
         padding-right: 12px;
     }
 
+    .w-lg-25 {
+        width: 25%;
+    }
+
     .mb-lg-0 {
         margin-bottom: 0;
+    }
+
+    .justify-content-lg-end {
+        justify-content: end;
+    }
+
+    .cardBox {
+        border-width: 0px solid #FFFFFF;
+        border-radius: 150px;
+        padding: 20px;
+    }
+
+
+    .border-lg-right {
+        border-right: 2px solid white;
     }
 }
