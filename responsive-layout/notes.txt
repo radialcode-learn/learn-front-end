@@ -1,0 +1,13 @@
+position:
+      static
+      absolute
+      relative
+      sticky
+      fixed
+      + 
+      top, right, bottom, left + z-index
+      
+tranfrom: translate(-50%, -50%);
+css selector?
+pseudo class 
+    :hover

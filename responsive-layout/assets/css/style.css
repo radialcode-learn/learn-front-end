@@ -161,7 +161,7 @@ article p {
 }
 
 .iconBoxContainer>.iconBox:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 article:hover .iconBoxContainer {
@@ -170,6 +170,7 @@ article:hover .iconBoxContainer {
 
 .iconBox:hover {
     background-color: #FF5300;
+    box-shadow: 1px 7px 10px rgba(255, 83, 0, 0.5);
 }
 
 .iconBox:hover>svg path {

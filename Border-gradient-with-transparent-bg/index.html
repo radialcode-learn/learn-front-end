@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Border-gradient-with-transparent-bg</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(24, 22, 22);
-      }
-      .my_box {
-        width: 400px;
-        height: 400px;
-        color: white;
-        margin: 24px auto;
-      }
 
-      .my_box {
-        /* broder-radius should be same on both my_box and my_box::after */
-        border-radius: 20px;
-        /* box background */
-        background: linear-gradient(
-          140.61deg,
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Border-gradient-with-transparent-bg</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(24, 22, 22);
+    }
+
+    .my_box {
+      width: 400px;
+      height: 400px;
+      color: white;
+      margin: 24px auto;
+    }
+
+    .my_box {
+      /* broder-radius should be same on both my_box and my_box::after */
+      border-radius: 20px;
+      /* box background */
+      background: linear-gradient(140.61deg,
           rgba(255, 255, 255, 0.08) -1.87%,
-          rgba(255, 255, 255, 0) 105.41%
-        );
-        backdrop-filter: blur(11px);
-        /* background: transparent; */
-        position: relative;
-        /* below padding is equivalent to line no.46 which is padding-5px */
-        padding: 5px;
-      }
+          rgba(255, 255, 255, 0) 105.41%);
+      backdrop-filter: blur(11px);
+      /* background: transparent; */
+      position: relative;
+      /* below padding is equivalent to line no.46 which is padding-5px */
+      padding: 5px;
+    }
 
-      .my_box::after {
-        content: "";
-        position: absolute;
-        /* broder-radius should be same on both my_box and my_box::after */
-        border-radius: 20px;
-        /* this paadding is the width of border */
-        padding: 5px;
-        /* broder-color */
-        background: linear-gradient(
-          119.1deg,
+    .my_box::after {
+      content: "";
+      position: absolute;
+      /* broder-radius should be same on both my_box and my_box::after */
+      border-radius: 20px;
+      /* this paadding is the width of border */
+      padding: 5px;
+      /* broder-color */
+      background: linear-gradient(119.1deg,
           rgba(233, 8, 8, 0.5) -2.34%,
           rgba(10, 78, 141, 0) 34.91%,
           rgba(59, 32, 102, 0) 64.9%,
-          rgba(55, 119, 216, 0.5) 102.19%
-        );
-        /*  we are using below property instead of left-0 top-0 bottom-0 right-0 */
-        inset: 0;
-        /* height: 100%;
+          rgba(55, 119, 216, 0.5) 102.19%);
+      /*  we are using below property instead of left-0 top-0 bottom-0 right-0 */
+      inset: 0;
+      /* height: 100%;
            width: 100%;
            top: 0;
            left: 0; */
-        -webkit-mask: linear-gradient(#fff 0 0) content-box,
-          linear-gradient(#fff 0 0);
-        /* the mask-composite property specifies that the XOR blending mode should be used to combine the mask image and the element's background. */
-        -webkit-mask-composite: xor;
-        pointer-events: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div>
-      <div style="text-align: center" class="my_box">
-        <h2 style="margin-top: 24px; color: aqua">
-          You can change the background of this box to transparent
-        </h2>
-      </div>
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      /* the mask-composite property specifies that the XOR blending mode should be used to combine the mask image and the element's background. */
+      -webkit-mask-composite: xor;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div style="text-align: center" class="my_box">
+      <h2 style="margin-top: 24px; color: aqua">
+        You can change the background of this box to transparent
+      </h2>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
