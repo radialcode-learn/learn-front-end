@@ -14,15 +14,16 @@
     <section class="min-vh-100 d-flex align-items-center bg-dark-subtle">
         <div class="container">
             <p>Try and Guess the number between 1 to 100.</p>
-            <p>And you have 10 attemptes.</p>
+            <p>Total Attemptes: 10</p>
+            <p>Remaining: <span class="lastResult">10</span></p>
             <form action="">
                 <label for="userInput">Guess a number</label>
                 <input type="number" id="userInput" />
                 <button type="submit">Submit</button>
             </form>
             <div class="resultBox">
-                <p>Previous Guesses: <span class="previousGuess"></span></p>
-                <p>Guesses Remaining: <span class="lastResult">10</span></p>
+                <p>Your Previous Guesses: <span class="previousGuess"></span></p>
+                <p>Right one: <span class="previousGuessResult"></span></p>
                 <div class="lowOrHi"></div>
             </div>
         </div>
