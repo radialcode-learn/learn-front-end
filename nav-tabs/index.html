@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>NavTab + Tailwind </title>
+</head>
+
+<body>
+    <section class="min-h-screen">
+        <nav class="py-5">
+            <div class="container mx-auto px-3">
+                <ul class="flex gap-4 relative py-2 overflow-x-auto">
+                    <li><a href="#" class="p-1 tab active whitespace-nowrap">Tab one</a></li>
+                    <li><a href="#" class="p-1 tab whitespace-nowrap">Tab two</a></li>
+                    <li><a href="#" class="p-1 tab whitespace-nowrap">Tab three</a></li>
+                    <li class="line absolute left-0 bottom-0 h-[5px] w-[63px] bg-blue-600 transition-all rounded-2xl">
+                    </li>
+                </ul>
+                <ul>
+                    <li
+                        class="p-3 border-2 border-blue-500 mt-3 content animate-[wiggle_.2s_ease-in-out] transition-all block">
+                        data
+                        one
+                    </li>
+                    <li
+                        class="p-3 border-2 border-blue-500 mt-3 content animate-[wiggle_.2s_ease-in-out] ransition-all hidden">
+                        data
+                        two</li>
+                    <li
+                        class="p-3 border-2 border-blue-500 mt-3 content animate-[wiggle_.2s_ease-in-out] ransition-all hidden">
+                        data
+                        three</li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <script src="./tab.js"></script>
+</body>
+
+</html>
